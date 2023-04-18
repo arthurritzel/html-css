@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Roboto:wght@100&display=swap');
+
+*{
+    padding: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Comic Neue', cursive;
+    box-sizing: border-box;
+}
+
+#main{
+    background-image: linear-gradient(to right, rgb(122, 197, 231), rgb(0, 71, 237));
+}
+
+.div-main{
+    background-color: rgba(255, 255, 255, 0.56);
+    border-radius: 10px;
+    text-indent: 1.3em;
+    padding: 10px;
+}
+
+.div-main > h1{
+    text-align: center;
+    color: aqua;
+}
+
+.div-main > p{
+    text-align: justify;
+    font-size: 1.3em;
+    font-style: italic;
+    line-height: 1.5em;
+}
