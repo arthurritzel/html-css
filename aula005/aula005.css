@@ -1,0 +1,21 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.caixa{
+    
+    border: 2px solid blue;
+    width: 150px;
+    padding-top: 50px;
+}
+
+h1{
+    border: 2px solid red;
+    width: 150px; 
+    /* padding: 10px 20px 30px 40px; */
+    /* margin: 50px 40px 30px 20px; */
+    padding: 20px 40px; 
+    /*superior e inferior */
+}

@@ -1,0 +1,31 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: BLUE;
+}
+
+main{
+    background-color: white;
+    margin: 1% auto;
+    width: 50%;
+    border-radius: 20px;
+    box-shadow: 10px 10px 10px black;
+}
+
+p{
+    position: static;
+    width: 300px;
+    border: 2px solid black;
+    margin: 10px;
+}
+
+.relative{
+    position: sticky;
+    width: 300px;
+    border: 2px solid red;
+    top: 10px;
+}
