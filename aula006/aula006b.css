@@ -1,0 +1,22 @@
+.container{
+    border: 2px black solid;
+    width: 50%;
+    height: 500px;
+}
+
+.item{
+    border: 2px black solid;
+    display: none;
+    width: 50%;
+    height: 50%;
+    background-color: aqua;
+    text-align: center;
+}
+
+.container:hover > .item{
+    display: block;
+}
+
+.item:hover{
+    background-color: antiquewhite;
+}

@@ -1,0 +1,23 @@
+
+a:link{
+    border: 2px solid black;
+    background-color: aqua;
+    text-decoration: none;
+}
+
+a:visited{
+    color: blue;
+}
+
+a:hover{
+    color: gray;
+}
+
+a:active{
+    background-color: rgb(56, 53, 53);
+}
+
+nav{
+    border: 2px black solid;
+    text-align: center;
+}

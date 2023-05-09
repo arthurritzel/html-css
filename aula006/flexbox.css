@@ -1,0 +1,55 @@
+.container{
+    display: flex;
+    background-color: aqua;
+    margin: 5px;
+}
+
+.container > div{
+    margin: 10px;
+    padding: 10px;
+    border: 2px black solid;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    margin: 5px;
+    
+    background-color: rgb(105, 105, 206);
+}
+
+.conteudo > div{
+    margin: 20px;
+    background-color: grey;
+    width: 100px;
+}
+
+.conteudo2{
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+    
+    background-color: rgb(35, 35, 88);
+}
+
+.conteudo2 > div{
+    margin: 20px;
+    width: 60px;
+    background-color: grey;
+}
+
+.conteudo3{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 5px;
+    
+    background-color: rgb(11, 11, 53);
+}
+
+.conteudo3 > div{
+    margin: 20px;
+    width: 300px;
+    background-color: grey;
+}
