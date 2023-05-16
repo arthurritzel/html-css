@@ -6,31 +6,43 @@
 
 nav{
     width: 100%;
-    padding: 20px;
+    padding: 25px;
     background-color: blue;
     display: flex;
-    justify-content: space-around;
+   justify-content: space-between;
 }
 
 nav > a{
     text-decoration: none;
     color: white;
     font-size: 20px;
+    
 }
 
 nav > input{
     width: 40%;
 }
 
-.logo{
-    width: 10%;
-    border: 2px black solid;
-}
 
 #home{
     display: flex;
+    flex-direction: column;
 }
 
 #home > img{
     width: 100%;
+}
+
+.produtos{
+    border: 2px black solid;
+    display: flex;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.produtos>img{
+    width: 300px;
+    margin: 10px;
 }
