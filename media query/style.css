@@ -5,14 +5,20 @@
 }
 
 nav{
-    width: 100%;
+    width: 96%;
     padding: 25px;
-    background-color: blue;
+    background-color: rgb(3, 48, 83);
     display: flex;
-   justify-content: space-between;
+   justify-content: space-around;
+   align-items: center;
+}
+
+.logo{
+    width: 35px;
 }
 
 nav > a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-decoration: none;
     color: white;
     font-size: 20px;
@@ -26,23 +32,34 @@ nav > input{
 
 #home{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    background-color: rgb(201, 206, 206);
 }
 
-#home > img{
+.banner{
     width: 100%;
 }
 
-.produtos{
-    border: 2px black solid;
+.produto{
     display: flex;
-    width: auto;
-    height: auto;
-    padding: 10px;
+    align-items: center;
+    flex-direction: column;
     justify-content: center;
-    flex-wrap: wrap;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+
+    height: 30vh;
+    width: 240px;
+    background-color: rgb(255, 255, 255);
 }
-.produtos>img{
-    width: 300px;
-    margin: 10px;
+.produto img{
+    padding: 10px;
+    width: 80%;
+
 }
