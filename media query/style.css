@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
-
+    /* border: red 2px solid; */
 }
 
 nav{
@@ -36,6 +36,7 @@ nav > input{
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
+    width: 100%;
     background-color: rgb(201, 206, 206);
 }
 
@@ -50,8 +51,8 @@ nav > input{
     justify-content: center;
     border-radius: 10px;
     margin-top: 60px;
-    margin-left: 10px;
-    margin-right: 10px;
+    margin-left: 5px;
+    margin-right: 5px;
     
 
     height: 30vh;
@@ -60,6 +61,43 @@ nav > input{
 }
 .produto img{
     padding: 10px;
-    width: 80%;
+    width: 75%;
 
+}
+
+
+@media (min-width: 319px) and (max-width: 450px){
+    
+    .banner{
+        height: 15vh;
+    }
+
+    nav img {
+        width: 80%
+    }
+    
+    #home{
+        width: 110%;
+    }
+    .produto{
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+    }
+    .produto img {
+        width: 70%;
+    }
+}
+
+@media (300px <= width <= 1000px) and (orientation: landscape){
+  
+    #home{
+        width: 105%;
+    }
+    .produto{
+        width: 140px;
+        height: 140px;
+        margin-top: 20px;
+    }
+   
 }
