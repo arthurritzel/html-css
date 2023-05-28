@@ -1,16 +1,18 @@
 *{
     margin: 0px;
     padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
     /* border: red 2px solid; */
 }
 
 nav{
-    width: 96%;
+    width: 100%;
     padding: 25px;
     background-color: rgb(3, 48, 83);
     display: flex;
-   justify-content: space-around;
-   align-items: center;
+    justify-content: space-around;
+    align-items: center;
 }
 
 .logo{
@@ -40,6 +42,13 @@ nav > input{
     background-color: rgb(201, 206, 206);
 }
 
+#home p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(3, 48, 83);
+    border-radius: 5px;
+}
+
 .banner{
     width: 100%;
 }
@@ -66,18 +75,20 @@ nav > input{
 }
 
 
-@media (min-width: 319px) and (max-width: 450px){
+@media all and (min-width: 250px) and (max-width: 500px) and (orientation: portrait){
     
     .banner{
         height: 15vh;
     }
-
+    nav{
+        justify-content: space-between;
+    }
     nav img {
         width: 80%
     }
     
     #home{
-        width: 110%;
+        background-color: rgb(142, 199, 199);
     }
     .produto{
         width: 150px;
@@ -89,14 +100,15 @@ nav > input{
     }
 }
 
-@media (300px <= width <= 1000px) and (orientation: landscape){
+
+@media /*handheld and */ (300px <= width <= 1000px) and (orientation: landscape){
   
-    #home{
-        width: 105%;
-    }
+   #home{
+    background-color: red;
+   }
     .produto{
-        width: 140px;
-        height: 140px;
+        width: 30%;
+        height: 30%;
         margin-top: 20px;
     }
    
