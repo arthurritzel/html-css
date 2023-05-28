@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #home {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    grid-template-areas:
+      "side main main"
+      "side main main"
+      "side main main"
+    ;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 150px 1fr;
+  }
+  
+ 
+  
+  #page > nav {
+    grid-area: side;
+    background-color: #ffa08c;
+  }
+  
+  #page > main {
+    grid-area: main;
+    background-color: #ffff64;
+  }
+  .produtos{
+    display: flex;
+    flex-wrap: wrap;
+  }
+ 
+    </style>
+</head>
+<body>
+    <section id="page">
+        <nav>Navigation</nav>
+        <main>
+            <div class="produtos">
+                <div class="produto">
+                    <p>&emsp; Iphone 13&emsp;</p>
+                    <img src="img/1g.jpg.webp" alt="">
+                </div>
+                <div class="produto">
+                    <p>&emsp; Iphone 13&emsp;</p>
+                    <img src="img/1g.jpg.webp" alt="">
+                </div>
+                <div class="produto">
+                    <p>&emsp; Iphone 13&emsp;</p>
+                    <img src="img/1g.jpg.webp" alt="">
+                </div>
+                <div class="produto">
+                    <p>&emsp; Iphone 13&emsp;</p>
+                    <img src="img/1g.jpg.webp" alt="">
+                </div>
+                <div class="produto">
+                    <p>&emsp; Iphone 13&emsp;</p>
+                    <img src="img/1g.jpg.webp" alt="">
+                </div>
+                <div class="produto">
+                    <p>&emsp; Iphone 13&emsp;</p>
+                    <img src="img/1g.jpg.webp" alt="">
+                </div>
+            </div>
+        </main>
+      </section>
+</body>
+</html>
+  
+  
