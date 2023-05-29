@@ -140,6 +140,17 @@ nav > input{
     }
 }
 
+@media all and (min-width: 501px) and (max-width: 700px) and (orientation: portrait){
+    
+    #home{
+        grid-template-areas:
+        "side main main "
+        "side main main "
+        "side main main ";
+        grid-template-columns: 0.35fr 1fr;
+    }
+}
+
 
 @media /*handheld and*/ (300px <= width <= 1000px) and (orientation: landscape){
   
