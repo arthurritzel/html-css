@@ -1,0 +1,215 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+    /* border: red 0.1px solid; */
+}
+
+nav{
+    width: 100%;
+    padding: 25px;
+    background-color: rgb(3, 48, 83);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.logo{
+    width: 35px;
+}
+
+nav > a{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    
+}
+
+nav > input{
+    width: 40%;
+}
+
+.banner{
+    width: 100%;
+}
+
+.banner1{
+    display: none;
+}
+
+#cat{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:white;
+    background-color: rgb(3, 48, 83);
+    font-size: 0.7rem; 
+    display: none;
+}
+
+#home {
+    display: grid;
+    width: 100%;
+    height: auto;
+    grid-template-areas:
+      "side section section"
+      "side section section"
+      "side section section"
+    ;
+    background-color: rgb(201, 206, 206);
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 0.2fr 1fr;
+}
+  
+
+ 
+
+.sidebar {
+    grid-area: side;
+    background-color: rgb(3, 48, 83);
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.sidebar > p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 25px;
+    margin-top: 20px;
+    margin: 10px auto;
+    align-items: baseline;
+    
+}
+.filtro{
+    display: flex;
+    margin: 20px;
+    
+}
+
+.fil{
+    display: flex;
+    margin-left: 40px;
+    
+    
+}
+
+
+.media {
+    grid-area: section;
+    background-color: rgb(201, 206, 206);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ 
+
+#home p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    background-color: rgb(3, 48, 83);
+    border-radius: 5px;
+}
+
+
+.produto{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 10px;
+    margin-top: 60px;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-height: 40vh;
+    width: 240px;
+    background-color: rgb(255, 255, 255);
+}
+.produto img{
+    padding: 10px;
+    width: 75%;
+
+}
+
+
+@media all and (min-width: 010px) and (max-width: 500px) and (orientation: portrait){
+    .banner{
+        height: 15vh;
+    }
+
+    nav{
+        justify-content: space-between;
+    }
+    nav img {
+        width: 80%
+    }
+    
+    #home{
+        grid-template-areas:
+        
+        "section section"
+        "section section"
+        "section section";
+    }
+    .media{
+        background-color: rgb(52, 65, 84);
+    }
+    .sidebar{
+        visibility: hidden;
+        position: absolute;
+    }
+
+    #cat {
+    
+        width: 100%;
+        display: block;
+        
+    }
+    .produto{
+        width: 150px;
+        height: 150px;
+        margin-top: 20px;
+    }
+    .produto img {
+        width: 70%;
+    }}
+
+@media all and (min-width: 501px) and (max-width: 700px) and (orientation: portrait){
+    
+    #home{
+        grid-template-areas:
+        "side section section"
+        "side section section"
+        "side section section";
+        grid-template-columns: 0.35fr 1fr;
+    }
+
+}
+
+
+@media /*handheld and*/ (300px <= width <= 1000px) and (orientation: landscape){
+  
+   .media{
+    height: auto;
+    background-color: brown;
+   }
+    .produto{
+        width: 30%;
+        height: 20%;
+        margin-top: 20px;
+    } 
+}
+
+@media only screen and (max-width: 500px){ 
+    .banner{
+      display: none;
+    }
+ 
+    .banner1{
+      display: block;
+      width:100%;
+    }
+ }
+
+
+
+
